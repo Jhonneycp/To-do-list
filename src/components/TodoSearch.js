@@ -15,7 +15,7 @@ function TodoSearch() {
     return(
         <input 
         className="TodoSearch" 
-        placeholder="escribe algo, puta" 
+        placeholder="write something here" 
         value={searchValue}
         onChange={onSearchValueChange}
         />

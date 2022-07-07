@@ -8,6 +8,8 @@ import {TodoContext} from '../TodoContext/todoContext.js'
 import {Modal} from '../components/Modal.js'
 import { TodoForm } from "../components/TodoForm";
 import { Loading } from "../components/Loading";
+import { Advice } from "../components/Advice";
+import { Error } from "../components/Error";
 
 function AppUI(){
 
@@ -28,9 +30,9 @@ function AppUI(){
         <TodoSearch/>
 
               <TodoList >
-              {error && <p>Hubo un error, desesperate!</p>}
+              {error && <Error/>}
               {loading && <Loading/>}
-              {(!loading && !searchedTodos.length && <p>Crea tu primer TODO!</p>)}
+              {(!loading && !searchedTodos.length && <Advice setOpenModal={setOpenModal} openModal={openModal}/>)}
     
     
               {searchedTodos.map(todo=>(

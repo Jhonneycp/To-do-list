@@ -1,0 +1,13 @@
+.Advice {
+    display: flex;
+    padding-top: 70px;
+}
+
+.Advice p{
+    background-color: #61DAFA;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 25px rgb(97 218 250 / 50%);
+}
